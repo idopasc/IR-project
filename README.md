@@ -10,7 +10,7 @@ The functions available in the frontend are the functions given to us in advance
 - get_pagerank
 - get_pageview
 
-The classes available in the backend are the classes given to us in advance in Assignment 3 and 4:
+The classes available in the backend are the classes given to us in Assignment 3 and 4 which we have tempered with to intergrate it to our system:
 - MultiFileWriter - Sequential binary writer to multiple files of up to BLOCK_SIZE each
 - MultiFileReader - Sequential binary reader of multiple files of up to BLOCK_SIZE each
 - InvertedIndex - Initializes the inverted index and add documents to it (if provided)
