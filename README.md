@@ -21,3 +21,5 @@ The functions available in the backend are the functions:
 - read_posting_list - returnes the posting list of specific word from specific index
 - autocorrect - correct typo and spelling mistakes. gets tokenized query based on the client input, and the relevant index
 - cossine_sim - fast cossine similarity method, which avoids calculating all the calculations that can be done offline
+- precision_at_k - evaluation method
+- precision_and_recall - another evaluation method. returns a tuple of (precision,recall) 
