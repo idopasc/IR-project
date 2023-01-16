@@ -26,9 +26,11 @@ The functions available in the backend are the functions:
 
 
 Code Stroage:
-  1.All of the pickles and the csv file for the global variables should be in the working directory. 
+  1.
+    All of the pickles and the csv file for the global variables should be in the working directory. 
     The bin files and the other files of the body index - bdf and bpl need to be in a sub directory of the working directory by the name of "body_index"  
     The bin files and the other files of the title index - tdf and tpl need to be in a sub directory of the working directory by the name of "title_index"
     
-  2.All the indexes,  the pickles we created and the page rank are in the bucket to which a link is attached in the project report.
+  2.
+    All the indexes,  the pickles we created and the page rank are in the bucket to which a link is attached in the project report.
     They were not additionally uploaded here due to the file upload size limit of the git.
