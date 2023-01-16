@@ -432,5 +432,23 @@ def cossine_sim(index, query, index_type):
 
 
 
+def precision_at_k(true_list, predicted_list, k=40):
+    count = 0
+    true_set = frozenset(true_list)
+    y_scores_sorted = list(predicted_list)[:k]
+    y_true_sorted = list(true_list)[:k]
+    for i,doc_id in enumerate(predicted_list):
+        if doc_id in true_list:
+          count += 1
+    if len(count) == 0:
+        return 0.0
+    return round(count/k,3)
 
-
+def precision_and_recall():
+    for q in queries.items():
+    res = requests.get(url + '/search', {'query': q}, timeout=35)
+    res_id = [x[0] for x in res]
+    len_found_from_relevant = len(res_id.intersection(queries[q]))
+    precision = len_found_from_relevant/100
+    recall = len_found_from_relevant/len(queries[q])
+    return (precision,recall)
