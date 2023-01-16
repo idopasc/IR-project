@@ -67,7 +67,7 @@ def search_body():
     sb_res = cossine_sim(body_index, tokenized_query, "B")
     res = [(doc_id, doc_id_to_title[doc_id]) for doc_id, score in sb_res]
     # END SOLUTION
-    return jsonify(res[:5])
+    return jsonify(res[:100])
 
 
 @app.route("/search_title")
