@@ -1,4 +1,4 @@
-# IR-project
+# Information Retrieval project
 Our code is divided into frontend and backend.
 All the logic is written in the backend, and the call to the appropriate functions is done from the frontend.
 
